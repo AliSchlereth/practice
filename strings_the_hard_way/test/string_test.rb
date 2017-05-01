@@ -8,4 +8,10 @@ class StringTest < Minitest::Test
 
     assert_equal 4, string.length
   end
+
+  def test_upcase_capitalize_all_letters
+    string = String.new("hand")
+
+    assert_equal "HAND", string.upcase
+  end
 end
