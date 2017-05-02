@@ -13,14 +13,16 @@ class String
   end
 
   def upcase
-    upcased = ""
-    @input_string.each do |letter|
-      upcased << letter.capitalize
+    @input_string.map do |letter|
+      letter.capitalize
     end
-    upcased
   end
 
-  
+  def sub(input, take_out, put_in)
+    input.map do |letter|
+
+    end
+  end
 
 
 
